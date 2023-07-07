@@ -4,7 +4,7 @@ services:
     image: mongo:latest
     restart: unless-stopped
     volumes:
-      - ./scripts/rs-init.sh:/scripts/rs-init.sh
+      - ./scripts:/scripts
     ports:
       - 27021:27017
     networks:
