@@ -1,6 +1,7 @@
 #!/bin/bash
 
 mongosh <<EOF
+use estacionamento
 db.carros.update(
     {"placa":"ABC123"},
     {
